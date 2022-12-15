@@ -4,7 +4,7 @@
  * times_table - prints the 9 times table, starting with 0.
  * Return: empyt output
  */
-void times_tible(void)
+void times_table(void)
 {
 	int x, y, z, u, d;
 
