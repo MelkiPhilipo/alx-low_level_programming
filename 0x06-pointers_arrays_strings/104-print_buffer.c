@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_line - prints as bytes of a buffer
+ * print_line - prints a s bytes of a buffer
  * @c: buffer to print
  * @s: bytes of buffer to print
  * @l: line of buffer to print
@@ -28,7 +28,7 @@ void print_line(char *c, int s, int l)
 		if (c[l * 10 + k] > 31 && c[l * 10 + k] < 127)
 			putchar(c[l * 10 + k]);
 		else
-			putchar('.');
+				putchar('.');
 	}
 }
 
@@ -52,7 +52,7 @@ void print_buffer(char *b, int size)
 		}
 		else
 		{
-			print_line(b, size % 10 - 1, i);
+				print_line(b, size % 10 - 1, i);
 		}
 		putchar('\n');
 	}
