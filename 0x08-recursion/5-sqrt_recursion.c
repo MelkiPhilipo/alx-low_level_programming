@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * check - checks for the square root
- * @n: int
+ * @a: int
  * @b: int
  *
  * Return: int
@@ -16,7 +16,7 @@ int check(int a, int b)
 }
 
 /**
- * int _sqrt_recursion - returns the natural square root of a number
+ * _sqrt_recursion - returns the natural square root of a number
  * @n: The integer to be printed
  * Return: natural square root or -1
  */
