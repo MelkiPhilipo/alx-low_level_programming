@@ -1,0 +1,36 @@
+# 0 "1-init_dog.c"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 0 "<command-line>" 2
+# 1 "1-init_dog.c"
+# 1 "dog.h" 1
+# 10 "dog.h"
+struct dog
+{
+ char *name;
+ float age;
+ char *owner;
+};
+
+
+
+
+typedef struct dog dog_t;
+
+int _putchar(char);
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+# 2 "1-init_dog.c" 2
+# 12 "1-init_dog.c"
+void init_dog(struct dog *d, char *name, float age, char *owner)
+{
+ if (d)
+ {
+  d->name = name;
+  d->age = age;
+  d->owner = owner;
+ }
+}
