@@ -38,10 +38,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	_andika = write(STDOUT_FILENO, buffer, _soma);
-	free(buffer);
 	if (_andika == -1)
 	{
 		perror("Error writing the stdout");
+		free(buffer);
 		close(filedes);
 		return (0);
 	}
