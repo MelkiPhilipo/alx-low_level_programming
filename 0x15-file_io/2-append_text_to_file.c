@@ -9,7 +9,6 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int filedes, _andika;
-	size_t i = 0;
 
 	if (!filename)
 		return (-1);
@@ -30,8 +29,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		close(filedes);
 		return (-1);
 	}
-	_andika = i;
-	if (i != strlen(text_content))
+	if (_andika != (int)strlen(text_content))
 	{
 		close(filedes);
 		return (-1);
