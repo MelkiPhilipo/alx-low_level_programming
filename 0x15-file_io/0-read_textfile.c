@@ -20,7 +20,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	filedes = open(filename, O_RDONLY);
 	if (filedes == -1)
 	{
-		perror("Error when opening file");
 		return (0);
 	}
 	buffer = malloc(sizeof(char) * letters);
@@ -32,7 +31,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	_soma = read(filedes, buffer, letters);
 	if (_soma == -1)
 	{
-		perror("Error when reading file");
 		free(buffer);
 		close(filedes);
 		return (0);
@@ -40,7 +38,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	_andika = write(STDOUT_FILENO, buffer, _soma);
 	if (_andika == -1)
 	{
-		perror("Error writing the stdout");
 		free(buffer);
 		close(filedes);
 		return (0);
