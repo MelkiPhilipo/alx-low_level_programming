@@ -33,7 +33,7 @@ int main(int ac, char **arv)
 			break;
 		error_98(re0, folder, arv[1]);
 		re1 = write(fi0, folder, re0);
-		error_99(res1, folder, arv[2]);
+		error_99(re1, folder, arv[2]);
 	} while (re1 >= FOLDER_SIZE);
 	re0 = close(fi0);
 	error_100(re0, folder);
