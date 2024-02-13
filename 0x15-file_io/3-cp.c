@@ -84,7 +84,7 @@ void error_100(int fi0, char *folder)
 {
 	if (fi0 < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: can't close file descriptor %i\n", fi0);
+		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE %i\n", fi0);
 		free(folder);
 		exit(100);
 	}
