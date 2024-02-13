@@ -53,7 +53,7 @@ void error_98(int fi0, char *folder, char *arv)
 {
 	if (fi0 < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE %s\n", arv);
+		dprintf(STDERR_FILENO, "Error: can't read from file %s\n", arv);
 		free(folder);
 		exit(98);
 	}
@@ -69,7 +69,7 @@ void error_99(int fi0, char *folder, char *arv)
 {
 	if (fi0 < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE %s\n", arv);
+		dprintf(STDERR_FILENO, "Error: can't write to %s\n", arv);
 		free(folder);
 		exit(99);
 	}
