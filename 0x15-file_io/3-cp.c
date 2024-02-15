@@ -18,11 +18,9 @@ int main(int ac, char **arv)
 		exit(97);
 	}
 	folder = malloc(sizeof(char) * FOLDER_SIZE);
-	if (folder == NULL)
-	{
-		fprintf(stderr, "failed to allocate\n");
-		return (1);
-	}
+	if (!folder)
+		return (0);
+
 	fi1 = open(arv[1], O_RDONLY);
 	error_98(fi1, folder, arv[1]);
 
