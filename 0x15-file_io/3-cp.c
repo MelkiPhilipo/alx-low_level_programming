@@ -1,4 +1,5 @@
 #include "main.h"
+
 #define FOLDER_SIZE 1024
 
 /**
@@ -89,3 +90,4 @@ void error_100(int fi0, char *folder)
 		exit(100);
 	}
 }
+

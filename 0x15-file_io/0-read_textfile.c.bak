@@ -6,7 +6,7 @@
  * @filename: the file to be opened or read.
  * @letters: is the number of letters to be read and print.
  * Return: _soma when success and 0 when failure.
- */
+*/
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int filedes;
@@ -45,4 +45,3 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	close(filedes);
 	return (_soma);
 }
-
